@@ -10,7 +10,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <exec_depend>tiago_gesture_memory</exec_depend>
-  <exec_depend>gesture_memory_cnn</exec_depend>
+  <exec_depend>gesture_letter_recognition</exec_depend>
 
    <export>
     <metapackage />
