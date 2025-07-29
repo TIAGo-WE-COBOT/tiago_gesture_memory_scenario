@@ -6,21 +6,76 @@
   <title>TIAGo gesture memory scenario</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #0d1117;
+      color: #f0f6fc;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
     }
     h1 {
-      color: #007acc;
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .video-container {
+      margin: 2rem 0;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+    }
+    .info-box {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 1rem;
+      margin: 1.5rem 0;
     }
   </style>
 </head>
 <body>
-  <h1>TIAGo *gesture memory* scenario</h1>
-  <p>This page host extra material about the implementation of a gesture-based memory game with a TIAGo robot (PAL Robotics).</p>
-  <p>The application has been developed at the WE-COBOT (Wearable and Collaborative Robotics) lab of the Polo Territoriale di Lecco - Politecnico di Milano.</p>
-  <p>The aim of the game is to engage older adults in a robot-mediated game to stimulate working memory and mild physical activity, thus contributing to prevent physical and cognitive decline.</p>
+  <h1>TIAGo <i>gesture memory</i> scenario</h1>
+  
+  <div class="info-box">
+    <p>This page hosts extra material about the implementation of a gesture-based memory game with a TIAGo robot (PAL Robotics).</p>
+  </div>
+  
+  <div class="info-box">
+    <p>The application has been developed at the WE-COBOT (Wearable and Collaborative Robotics) lab of the <a href="https://www.polo-lecco.polimi.it/" target="_blank">Polo Territoriale di Lecco - Politecnico di Milano</a>.</p>
+  </div>
+  
+  <div class="info-box">
+    <p>The aim of the game is to engage older adults in a robot-mediated game to stimulate working memory and mild physical activity, thus contributing to prevent physical and cognitive decline.</p>
+  </div>
+  
+  <h2>Demonstration Video</h2>
+  <div class="video-container">
+    <!-- Replace with your actual video embed code -->
+    <iframe 
+      src="https://github.com/TIAGo-WE-COBOT/tiago_gesture_memory_scenario/blob/a62cb4c71de2f64b937c1cc61d0e32dcd3e73b9a/docs/demo_short_ITA_compressed.mp4" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
